@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Level two</title>
+    <title>Django Level two - Webpage</title>
     <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
 </head>
 <body>
-    <h1>Hi welcome to Django Level Two!</h1>
-    <h2>Here are youre access records:</h2>
+    <h1 class="heading_two">Hi tony!</h1>
+    <h2>Here are youre webpage records:</h2>
 
     <div class="djangotwo">
-        {% if access_records %}
+        {% if webpage_records %}
         <table>
             <thead>
                 <th>Site Name</th>
-                <th>Date Accessed</th>
+                <th>Topic</th>
             </thead>
         
-            {% for acc in access_records%}
+            {% for webpage in webpage_records%}
             <tr>
-                <td>{{acc.name}}</td>
-                <td>{{acc.date}}</td>
+                <td>{{webpage.name}}</td>
+                <td>{{webpage.topic}}</td>
             </tr>
             {% endfor %}
         </table>

@@ -1,0 +1,14 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    color: red;
+}
+
+.heading_two{
+    color: blue;
+}
+
+table,th,td{
+    border: 1px solid purple;
+}
